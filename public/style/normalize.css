@@ -44,11 +44,11 @@ a:not([class]) {
 }
 
 /* Упрощаем работу с изображениями */
-img {
-//  max-width: 100%;
-//  height: auto;
+/* img {
+max-width: 100%;
+height: auto; 
  display: block;
-}
+} */
 svg {
   max-width: 100%;
   height: 100%;

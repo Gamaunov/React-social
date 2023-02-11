@@ -1,6 +1,7 @@
 import { Search, Person, Chat, Notifications } from "@material-ui/icons";
 import "./topbar.css";
 
+
 function Topbar() {
   return (
     <div className="topbarContainer">
@@ -9,7 +10,7 @@ function Topbar() {
       </div>
       <div className="topbarCenter">
         <div className="searchbar">
-          <Search />
+          <Search className="searchIcon"/>
           <input
             className="searchInput"
             placeholder="it`s gonna be legen... wait for it..."
@@ -35,6 +36,7 @@ function Topbar() {
             <span className="topbarIconBadge">3</span>
           </div>
         </div>
+        <img className="topbarImg" src='/assets/img/person/1.jpg' alt="logo" />
       </div>
     </div>
   );
