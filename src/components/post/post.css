@@ -1,0 +1,83 @@
+.post {
+  width: 100%;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 14px 6px rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 0px 14px 6px rgba(0, 0, 0, 0.6);
+  margin: 30px 0;
+}
+.postWrapper {
+  padding: 10px;
+}
+.postTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.postTopLeft {
+  display: flex;
+  align-items: center;
+}
+.postProfileImg {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.postUserName {
+  font-family: "SegoeUI";
+  font-size: 15px;
+  margin: 0 10px;
+}
+.postDate {
+  font-size: 12px;
+}
+.postCenter {
+  margin: 20px 0;
+}
+.postImg {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 500px;
+  object-fit: contain;
+}
+.postBottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.postBotoomLeft {
+  display: flex;
+  align-items: center;
+}
+.likeIcon {
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.likeIcon--hearts {
+  color: red;
+}
+.likeIcon--hearts:hover {
+  transform: scale(1.1);
+}
+.likeIcon--hearts:active {
+  transform: scale(1);
+}
+.likeIcon--thumbs-up {
+  color: forestgreen;
+}
+.likeIcon--thumbs-up:hover {
+  transform: scale(1.1);
+}
+.likeIcon--thumbs-up:active {
+  transform: scale(1);
+}
+.postLikeCounter {
+  font-size: 15px;
+}
+.postCommentText {
+  cursor: pointer;
+  font-size: 15px;
+  border-bottom: 1px dashed gray;
+}
