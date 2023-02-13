@@ -7,6 +7,8 @@ import {
   School,
   WorkOutline,
 } from "@material-ui/icons";
+import { Users } from "../../dummyData";
+import CloseFriend from "../closeFriend/CloseFriend";
 
 export default function Sidebar() {
   return (
@@ -41,86 +43,9 @@ export default function Sidebar() {
         <button className="sidebarButton">Show more</button>
         <hr className="sidebarHr" />
         <ul className="sidebarFriendsList">
-          <li className="sidebarFriend">
-            <img
-              className="sidebarFriendImg"
-              src="/assets/img/person/2.jpg"
-              alt="person"
-            />
-            <span className="sidebarFriendName">Pushkin Alex</span>
-          </li>
-          <li className="sidebarFriend">
-            <img
-              className="sidebarFriendImg"
-              src="/assets/img/person/3.jpg"
-              alt="person"
-            />
-            <span className="sidebarFriendName">Grigoriev Apollon</span>
-          </li>
-          <li className="sidebarFriend">
-            <img
-              className="sidebarFriendImg"
-              src="/assets/img/person/4.jpg"
-              alt="person"
-            />
-            <span className="sidebarFriendName">Pushkin Alex</span>
-          </li>
-          <li className="sidebarFriend">
-            <img
-              className="sidebarFriendImg"
-              src="/assets/img/person/5.jpg"
-              alt="person"
-            />
-            <span className="sidebarFriendName">Fet Afonasiy</span>
-          </li>
-          <li className="sidebarFriend">
-            <img
-              className="sidebarFriendImg"
-              src="/assets/img/person/6.jpg"
-              alt="person"
-            />
-            <span className="sidebarFriendName">Radishev Alexandr</span>
-          </li>
-          <li className="sidebarFriend">
-            <img
-              className="sidebarFriendImg"
-              src="/assets/img/person/7.jpg"
-              alt="person"
-            />
-            <span className="sidebarFriendName">Krylov Ivan</span>
-          </li>
-          <li className="sidebarFriend">
-            <img
-              className="sidebarFriendImg"
-              src="/assets/img/person/8.jpg"
-              alt="person"
-            />
-            <span className="sidebarFriendName">Karamzin Nicolay</span>
-          </li>
-          <li className="sidebarFriend">
-            <img
-              className="sidebarFriendImg"
-              src="/assets/img/person/9.jpg"
-              alt="person"
-            />
-            <span className="sidebarFriendName">Gogol Nikolas</span>
-          </li>
-          <li className="sidebarFriend">
-            <img
-              className="sidebarFriendImg"
-              src="/assets/img/person/10.jpg"
-              alt="person"
-            />
-            <span className="sidebarFriendName">Nekrasov Nikola</span>
-          </li>
-          <li className="sidebarFriend">
-            <img
-              className="sidebarFriendImg"
-              src="/assets/img/person/10.jpg"
-              alt="person"
-            />
-            <span className="sidebarFriendName">Lermontov Mike</span>
-          </li>
+          {Users.map((u) => (
+            <CloseFriend key={u.id} user={u} />
+          ))}
         </ul>
       </div>
     </div>
