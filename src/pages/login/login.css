@@ -1,0 +1,79 @@
+.login {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: azure;
+}
+.loginWrapper {
+  width: 70%;
+  height: 60%;
+  display: flex;
+}
+.loginLeft,
+.loginRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.loginLogo {
+  font-family: "SegoeUI-Bold";
+  font-size: 52px;
+  line-height: 80px;
+  color: aqua;
+  margin-bottom: 10px;
+}
+.loginDesc {
+  font-size: 24px;
+}
+.loginRight {
+  margin: 20px;
+}
+.loginBox {
+  height: 300px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 10px;
+  -webkit-box-shadow: 0px 0px 1px 1px aqua;
+  box-shadow: 0px 0px 1px 1px aqua;
+}
+.loginInput {
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid gray;
+  padding: 0 10px;
+  font-weight: 500;
+  font-size: 18px;
+}
+.loginInput:focus {
+  outline: none;
+}
+.loginButton,
+.loginRegisterButton {
+  height: 50px;
+  border-radius: 10px;
+  background-color: aqua;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  cursor: pointer;
+}
+.loginButton:hover {
+  background-color: rgb(56, 212, 212);
+}
+.loginForgot {
+  border-top: 1px solid #000;
+  padding-top: 20px;
+  text-align: center;
+  color: rgb(3, 49, 49);
+}
+.loginRegisterButton {
+  background-color: darkseagreen;
+}
+.loginRegisterButton:hover {
+  background-color: rgb(120, 157, 120);
+}

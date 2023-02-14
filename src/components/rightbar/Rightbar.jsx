@@ -54,27 +54,51 @@ export default function Rightbar({ profile }) {
         <h4 className="rightbarTitle">User friends</h4>
         <div className="rightbarFollowings">
           <div className="rightbarFollowing">
-            <img className="rightbarFollowingImg" src="assets/img/person/2.jpg" alt="person" />
+            <img
+              className="rightbarFollowingImg"
+              src="assets/img/person/2.jpg"
+              alt="person"
+            />
             <span className="rightbarFollowingName">Lermontov Mikhail</span>
           </div>
           <div className="rightbarFollowing">
-            <img className="rightbarFollowingImg" src="assets/img/person/3.jpg" alt="person" />
+            <img
+              className="rightbarFollowingImg"
+              src="assets/img/person/3.jpg"
+              alt="person"
+            />
             <span className="rightbarFollowingName">Lermontov Mikhail</span>
           </div>
           <div className="rightbarFollowing">
-            <img className="rightbarFollowingImg" src="assets/img/person/4.jpg" alt="person" />
+            <img
+              className="rightbarFollowingImg"
+              src="assets/img/person/4.jpg"
+              alt="person"
+            />
             <span className="rightbarFollowingName">Lermontov Mikhail</span>
           </div>
           <div className="rightbarFollowing">
-            <img className="rightbarFollowingImg" src="assets/img/person/5.jpg" alt="person" />
+            <img
+              className="rightbarFollowingImg"
+              src="assets/img/person/5.jpg"
+              alt="person"
+            />
             <span className="rightbarFollowingName">Lermontov Mikhail</span>
           </div>
           <div className="rightbarFollowing">
-            <img className="rightbarFollowingImg" src="assets/img/person/6.jpg" alt="person" />
+            <img
+              className="rightbarFollowingImg"
+              src="assets/img/person/6.jpg"
+              alt="person"
+            />
             <span className="rightbarFollowingName">Lermontov Mikhail</span>
           </div>
           <div className="rightbarFollowing">
-            <img className="rightbarFollowingImg" src="assets/img/person/7.jpg" alt="person" />
+            <img
+              className="rightbarFollowingImg"
+              src="assets/img/person/7.jpg"
+              alt="person"
+            />
             <span className="rightbarFollowingName">Lermontov Mikhail</span>
           </div>
         </div>
@@ -85,7 +109,7 @@ export default function Rightbar({ profile }) {
   return (
     <div className="rightbar">
       <div className="rightbarWrapper">
-        <ProfileRightbar />
+        {profile ? <ProfileRightbar /> : <HomeRightbar />}
       </div>
     </div>
   );
