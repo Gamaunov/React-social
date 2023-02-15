@@ -5,6 +5,8 @@
 /.pnp
 .pnp.js
 .idea
+node-app/node_modules
+node-app/.env
 
 # testing
 /coverage
